@@ -1,4 +1,4 @@
-# 🐱🐶 Cat vs Dog Classifier
+# Cat vs Dog Classifier
 
 This is a deep learning web app built with **TensorFlow** and **Flask**, deployed on **Hugging Face Spaces**.  
 
@@ -14,4 +14,4 @@ Perfect for showcasing Machine Learning + Deployment skills 🚀
 
 
 developede_by:  Diwanshu Gangwar 
-Deploement date: [4th Sept 2025]"# cat-vs-dog-classifier" 
+Deployment date: [4th Sept 2025]"# cat-vs-dog-classifier" 
