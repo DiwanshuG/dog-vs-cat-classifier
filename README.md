@@ -14,4 +14,4 @@ Perfect for showcasing Machine Learning + Deployment skills 🚀
 
 
 developede_by:  Diwanshu Gangwar 
-Deploement date: [4th Sept 2025]
+Deploement date: [4th Sept 2025]"# cat-vs-dog-classifier" 
