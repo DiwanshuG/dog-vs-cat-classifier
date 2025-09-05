@@ -7,7 +7,6 @@ This is a deep learning web app built with **TensorFlow** and **Flask**, deploye
 
 ## Tech Stack
 - TensorFlow 2.20.0  
-- Flask  
 - Hugging Face Spaces  
 
 Perfect for showcasing Machine Learning + Deployment skills 🚀
@@ -15,5 +14,7 @@ Perfect for showcasing Machine Learning + Deployment skills 🚀
 
 developede_by:  Diwanshu Gangwar 
 Deployment date: [4th Sept 2025]"# cat-vs-dog-classifier" 
+"# dog-vs-cat-classifier" 
+"# dog-vs-cat-classifier" 
 "# dog-vs-cat-classifier" 
 "# dog-vs-cat-classifier" 
