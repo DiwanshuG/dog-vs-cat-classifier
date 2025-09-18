@@ -9,7 +9,7 @@ This is a deep learning web app built with **TensorFlow** and **Flask**, deploye
 - TensorFlow 2.20.0  
 - Hugging Face Spaces  
 
-Perfect for showcasing Machine Learning + Deployment skills 🚀
+live demo : https://huggingface.co/spaces/mrtaiech/dog-and-cat-classifier
 
 
 developede_by:  Diwanshu Gangwar 
