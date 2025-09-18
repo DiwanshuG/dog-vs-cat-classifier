@@ -27,6 +27,13 @@ custom_html = """
 <div style="text-align:center; padding:20px;">
     <h1 style="color:#4CAF50; font-size:36px;">Dog vs Cat Classifier 🐶🐱</h1>
     <p style="font-size:18px;">Upload an image to find out whether it's a Dog or Cat.</p>
+    <br>
+    <p style="font-size:16px; color:gray;">
+        Created by Diwanshu with ❤️ | Connect with me 
+        <a href="https://www.linkedin.com/in/diwanshu-gangwar/" target="_blank" style="color:#0077b5; text-decoration:none; font-weight:bold;">
+            LinkedIn
+        </a>
+    </p>
 </div>
 """
 
