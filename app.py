@@ -6,21 +6,22 @@ from tensorflow.keras.preprocessing import image
 from PIL import Image
 
 model_path = hf_hub_download(
-    repo_id="mrtaiech/cat-vs-dog-vgg16",
-    filename="Best_VGG16_Clean.keras"
+    repo_id="mrtaiech/cat-vs-dog-vgg16",  
+    filename="Best_VGG16_Clean.keras"     
 )
 
+# Load model
 model = load_model(model_path, compile=False)
 
+
 def predict(img):
-    img = img.convert("RGB").resize((150, 150))
-    x = np.expand_dims(image.img_to_array(img), axis=0) / 255.0
-    preds = model.predict(x)[0][0]
-    confidence = preds if preds > 0.5 else 1 - preds
-    if confidence < 0.7:
-        return "❓ Not confident — please upload a Dog 🐶 or Cat 🐱 image"
-    label = "Dog 🐶" if preds > 0.5 else "Cat 🐱"
-    return f"{label} ({confidence*100:.2f}%)"
+    img = img.convert("RGB")
+    img = img.resize((150, 150))
+    x = image.img_to_array(img)
+    x = np.expand_dims(x, axis=0) / 255.0
+    preds = model.predict(x)
+    return "Dog 🐶" if preds[0][0] > 0.5 else "Cat 🐱"
+
 
 custom_html = """
 <div style="text-align:center; padding:20px;">
@@ -29,11 +30,14 @@ custom_html = """
 </div>
 """
 
+
 with gr.Blocks() as demo:
     gr.HTML(custom_html)
+    
     with gr.Row():
         img_input = gr.Image(type="pil", label="Upload Image", tool="editor")
         output = gr.Label(label="Prediction")
+    
     classify_btn = gr.Button("Classify")
     classify_btn.click(fn=predict, inputs=img_input, outputs=output)
 
