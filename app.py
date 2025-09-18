@@ -42,7 +42,7 @@ with gr.Blocks() as demo:
     gr.HTML(custom_html)
     
     with gr.Row():
-        img_input = gr.Image(type="pil", label="Upload Image", tool="editor")
+        img_input = gr.Image(type="pil", label="Upload Image")
         output = gr.Label(label="Prediction")
     
     classify_btn = gr.Button("Classify")
