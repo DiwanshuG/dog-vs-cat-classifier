@@ -14,8 +14,5 @@ live demo : https://huggingface.co/spaces/mrtaiech/dog-and-cat-classifier
 
 developede_by:  Diwanshu Gangwar 
 Deployment date: [4th Sept 2025]"# cat-vs-dog-classifier" 
-"# dog-vs-cat-classifier" 
-"# dog-vs-cat-classifier" 
-"# dog-vs-cat-classifier" 
-"# dog-vs-cat-classifier" 
-"# dog-vs-cat-classifier" 
+
+
