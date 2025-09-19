@@ -10,6 +10,7 @@ model_path = hf_hub_download(
     filename="Best_VGG16_Clean.keras"     
 )
 
+# Load model
 model = load_model(model_path, compile=False)
 
 
@@ -18,13 +19,16 @@ def predict(img):
     x = np.expand_dims(image.img_to_array(img), axis=0) / 255.0
     preds = model.predict(x)[0][0]
 
- 
+   
     confidence = preds if preds > 0.5 else 1 - preds
+
+    
     if confidence < 0.8:   
         return "❌ Please upload a valid Dog 🐶 or Cat 🐱 image"
 
     label = "Dog 🐶" if preds > 0.5 else "Cat 🐱"
     return f"{label} ({confidence*100:.2f}%)"
+
 
 
 
@@ -41,6 +45,7 @@ custom_html = """
     </p>
 </div>
 """
+
 
 
 with gr.Blocks() as demo:
